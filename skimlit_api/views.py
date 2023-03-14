@@ -4,6 +4,10 @@ import tensorflow as tf
 from keras.layers import TextVectorization
 import pandas as pd
 import json
+import gdown
+
+url = 'https://drive.google.com/drive/folders/19YjtkelePVX-HROygr1Uoawe9NCkFUM_?usp=share_link'
+gdown.download_folder(url, quiet=True, use_cookies=False)
 
 model_path = "skimlit_api/skimlit_tribrid_model/"
 
